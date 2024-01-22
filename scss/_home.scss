@@ -1,0 +1,107 @@
+.s-hero {
+  .container {
+    position: relative;
+  }
+  .image {
+    .figma {
+      position: absolute;
+      top: 162px;
+      left: 75px;
+    }
+    .wordpress {
+      position: absolute;
+      top: 25px;
+      right: 85px;
+    }
+    .reactjs {
+      position: absolute;
+      top: 470px;
+      left: 45px;
+    }
+    .nextjs {
+      position: absolute;
+      top: 410px;
+      right: 150px;
+    }
+  }
+  .social-midia {
+    a {
+      display: block;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 100%; /* 20px */
+      text-decoration: underline;
+    }
+    .instagram {
+      position: absolute;
+      top: 287px;
+      left: 222px;
+    }
+    .instagram-line {
+      position: absolute;
+      top: 296px;
+      left: 326px;
+    }
+    .behance {
+      position: absolute;
+      top: 84px;
+      left: 318px;
+    }
+    .behance-line {
+      position: absolute;
+      top: 105px;
+      left: 400px;
+    }
+    .dribbble {
+      position: absolute;
+      top: 50px;
+      left: 568px;
+    }
+    .linkedin {
+      position: absolute;
+      top: 77px;
+      right: 326px;
+    }
+    .github {
+      position: absolute;
+      top: 287px;
+      right: 252px;
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("../img/background.svg") no-repeat center center;
+    padding-top: 16.9rem;
+    padding-bottom: 16.2rem;
+    .text {
+      width: 100%;
+      max-width: 59.2rem;
+      text-align: center;
+      h4 {
+        color: $white;
+        @include typeface-1(h4, desktop);
+        font-weight: 500;
+        letter-spacing: 1.4px;
+        opacity: 0.75;
+        margin-top: 2.4rem;
+        span {
+          color: $color-primary-default;
+          opacity: 1;
+        }
+      }
+      span {
+        display: inline-block;
+        margin-top: 1.2rem;
+        font-size: 2rem;
+        font-weight: 500;
+        color: $white;
+        opacity: 0.75;
+        line-height: 100%;
+      }
+    }
+  }
+}

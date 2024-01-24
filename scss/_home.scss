@@ -58,15 +58,30 @@
       top: 50px;
       left: 568px;
     }
+    .dribbble-line {
+      position: absolute;
+      top: 86px;
+      left: 607px;
+    }
     .linkedin {
       position: absolute;
       top: 77px;
       right: 326px;
     }
+    .linkedin-line {
+      position: absolute;
+      top: 100px;
+      right: 408px;
+    }
     .github {
       position: absolute;
       top: 287px;
       right: 252px;
+    }
+    .github-line {
+      position: absolute;
+      top: 300px;
+      right: 328px;
     }
   }
   .content {
@@ -101,6 +116,37 @@
         color: $white;
         opacity: 0.75;
         line-height: 100%;
+      }
+    }
+  }
+}
+
+.s-marquee {
+  width: 100%;
+  background-color: $color-primary-default;
+  padding: 2.65rem 0;
+  overflow: hidden;
+  .content-marquee {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    animation: marquee 80s linear infinite;
+    .item-marquee {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      background-color: #59efa7;
+      padding: 16px 32px;
+      gap: 8px;
+      p {
+        color: #0a0c0b;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 150%; /* 27px */
+        letter-spacing: 0.54px;
       }
     }
   }

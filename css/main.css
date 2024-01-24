@@ -74,6 +74,26 @@ h1 {
     @include typeface-1(h4, mobile);
   }
 } */
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+  }
+}
+@keyframes marquee {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+  }
+}
 .container {
   width: 100%;
   max-width: 1246px;
@@ -256,15 +276,30 @@ header .menu .cta img {
   top: 50px;
   left: 568px;
 }
+.s-hero .social-midia .dribbble-line {
+  position: absolute;
+  top: 86px;
+  left: 607px;
+}
 .s-hero .social-midia .linkedin {
   position: absolute;
   top: 77px;
   right: 326px;
 }
+.s-hero .social-midia .linkedin-line {
+  position: absolute;
+  top: 100px;
+  right: 408px;
+}
 .s-hero .social-midia .github {
   position: absolute;
   top: 287px;
   right: 252px;
+}
+.s-hero .social-midia .github-line {
+  position: absolute;
+  top: 300px;
+  right: 328px;
 }
 .s-hero .content {
   display: -webkit-box;
@@ -324,4 +359,47 @@ header .menu .cta img {
   color: #ffffff;
   opacity: 0.75;
   line-height: 100%;
+}
+
+.s-marquee {
+  width: 100%;
+  background-color: #37ff9f;
+  padding: 2.65rem 0;
+  overflow: hidden;
+}
+.s-marquee .content-marquee {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 16px;
+  -webkit-animation: marquee 80s linear infinite;
+  animation: marquee 80s linear infinite;
+}
+.s-marquee .content-marquee .item-marquee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  background-color: #59efa7;
+  padding: 16px 32px;
+  gap: 8px;
+}
+.s-marquee .content-marquee .item-marquee p {
+  color: #0a0c0b;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.54px;
 }

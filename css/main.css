@@ -403,3 +403,69 @@ header .menu .cta img {
   line-height: 150%; /* 27px */
   letter-spacing: 0.54px;
 }
+
+.s-skills {
+  width: 100%;
+  padding: 112px 0;
+  background-color: #ffffff;
+}
+.s-skills .skills-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-bottom: 64px;
+}
+.s-skills .skills-title h2 {
+  color: #02120a;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 100%; /* 32px */
+}
+.s-skills .skills-title p {
+  max-width: 409px;
+  color: #7b7b7b;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 132.5%;
+}
+.s-skills .skills-title p strong {
+  color: #37ff9f;
+}
+.s-skills .skills-top ul,
+.s-skills .skills-bottom ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 32px;
+  overflow: hidden;
+}
+.s-skills .skills-top ul li,
+.s-skills .skills-bottom ul li {
+  width: 100%;
+  background-color: #f1f5f3;
+  padding: 32px;
+}
+.s-skills .skills-top ul li h3,
+.s-skills .skills-bottom ul li h3 {
+  color: #02120a;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 100%; /* 22px */
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.s-skills .skills-top ul li p,
+.s-skills .skills-bottom ul li p {
+  color: #78797a;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 100%; /* 16px */
+}
+.s-skills .skills-top {
+  padding-bottom: 32px;
+}

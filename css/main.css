@@ -129,6 +129,9 @@ img {
 
 /* @import "partials/patterns";*/
 header {
+  position: sticky;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 9.6rem;
   background-color: #131816;
@@ -138,6 +141,7 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  z-index: 2050;
   border-bottom: 1px solid #37ff9f;
 }
 header .container {
@@ -468,4 +472,116 @@ header .menu .cta img {
 }
 .s-skills .skills-top {
   padding-bottom: 32px;
+}
+
+.s-about-me {
+  padding-bottom: 112px;
+}
+.s-about-me .container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(89, 239, 166, 0.493);
+  padding: 112px 0;
+}
+.s-about-me .about-me-text {
+  width: 100%;
+  max-width: 612px;
+}
+.s-about-me .about-me-text .text-content {
+  width: 100%;
+  max-width: 58.6rem;
+}
+.s-about-me .about-me-text .text-content span {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 2.4rem;
+}
+.s-about-me .about-me-text .text-content h2 {
+  color: #37ff9f;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120%; /* 48px */
+}
+.s-about-me .about-me-text .text-content .subtitle-about-me {
+  color: #ffffff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  margin-top: 0.4rem;
+}
+.s-about-me .about-me-text .text-content .description-about-me {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  margin-top: 4rem;
+}
+.s-about-me .about-me-text .text-content .link-instagram {
+  display: inline-block;
+  color: #37ff9f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 16.8px */
+  margin-top: 24px;
+  -webkit-transition: all 4s ease;
+  transition: all 4s ease;
+}
+.s-about-me .about-me-text .text-content .link-instagram:hover {
+  text-decoration-line: underline;
+}
+.s-about-me .about-me-text .about-me-experience-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.s-about-me .about-me-text .about-me-experience-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 18px;
+  background-color: #59efa7;
+}
+.s-about-me .about-me-text .about-me-experience-list li p {
+  color: #0a0c0b;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.54px;
+}
+.s-about-me .about-me-image .element-1 {
+  position: absolute;
+  top: 60px;
+  right: 204px;
+}
+.s-about-me .about-me-image .element-2 {
+  position: absolute;
+  bottom: 46px;
+  right: -66px;
 }

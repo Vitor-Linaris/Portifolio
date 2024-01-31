@@ -22,9 +22,7 @@
   font-weight: 700;
 }
 
-*,
-*:after,
-*:before {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -35,20 +33,20 @@
 
 @import "variables";
 @import "typography";
+@import "mixins";
 @import "animation";
 @import "container";
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
   // Scrool mais suave de transição
   scroll-behavior: smooth;
 }
 
 body {
-  width: 100%;
-  height: 100vh;
   position: relative;
-  scroll-behavior: smooth;
+  min-height: 100vh;
   background-color: #0a0c0b;
 }
 

@@ -124,7 +124,35 @@ img {
   border: 1px solid red;
 }
 
-/* @import "partials/patterns";*/
+.cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  line-height: 120%;
+  /* @else if $size == h5 and $device == desktop {
+    font-size: 16px;
+    line-height: 120%;
+  } @else if $size == h5 and $device == mobile {
+    font-size: 16px;
+    line-height: 150%;
+  } @else if $size == h6 and $device == desktop {
+    font-size: 16px;
+    line-height: 120%;
+  } @else if $size == h6 and $device == mobile {
+    font-size: 16px;
+    line-height: 150%;
+  } */
+  color: #0a0c0b;
+  background-color: #37ff9f;
+  padding: 1.8rem 2.4rem;
+  font-weight: 700;
+}
+.cta img {
+  margin-right: 1rem;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -191,34 +219,6 @@ header .menu ul li a {
     line-height: 150%;
   } */
   color: #ffffff;
-}
-header .menu .cta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 16px;
-  line-height: 120%;
-  /* @else if $size == h5 and $device == desktop {
-    font-size: 16px;
-    line-height: 120%;
-  } @else if $size == h5 and $device == mobile {
-    font-size: 16px;
-    line-height: 150%;
-  } @else if $size == h6 and $device == desktop {
-    font-size: 16px;
-    line-height: 120%;
-  } @else if $size == h6 and $device == mobile {
-    font-size: 16px;
-    line-height: 150%;
-  } */
-  color: #0a0c0b;
-  background-color: #37ff9f;
-  padding: 1.8rem 2.4rem;
-  font-weight: 700;
-}
-header .menu .cta img {
-  margin-right: 1rem;
 }
 
 .s-hero .container {
@@ -1167,4 +1167,60 @@ header .menu .cta img {
   .s-cases .container .slide-cases-mobile .swiper-wrapper .swiper-slide .case-box .case-box-title h6 {
     font-size: 16px;
   }
+}
+
+.s-call-to-action {
+  padding-top: 112px;
+  padding-bottom: 112px;
+}
+.s-call-to-action .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.s-call-to-action .call-to-action-title {
+  width: 100%;
+  max-width: 779px;
+}
+.s-call-to-action .call-to-action-title h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 100%; /* 40px */
+}
+.s-call-to-action .call-to-action-title a {
+  width: 100%;
+  max-width: 208px;
+  margin-top: 80px;
+}
+.s-call-to-action .social-media ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.s-call-to-action .social-media ul li a p {
+  display: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 150%;
+  margin-right: 12px;
+}
+.s-call-to-action .social-media ul li a:hover p {
+  display: block;
+}
+.s-call-to-action .social-media ul li:not(:last-child) {
+  margin-bottom: 10px;
 }

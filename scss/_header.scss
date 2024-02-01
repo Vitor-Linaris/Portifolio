@@ -30,16 +30,5 @@ header {
         }
       }
     }
-    .cta {
-      img {
-        margin-right: 1rem;
-      }
-      display: flex;
-      @include typeface-1(h4, desktop);
-      color: $black;
-      background-color: #37ff9f;
-      padding: 1.8rem 2.4rem;
-      font-weight: 700;
-    }
   }
 }

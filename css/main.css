@@ -1224,3 +1224,54 @@ header .menu ul li a {
 .s-call-to-action .social-media ul li:not(:last-child) {
   margin-bottom: 10px;
 }
+
+footer {
+  border-top: 2px solid #37ff9f;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #131816;
+}
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+footer .right-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+footer .right-footer p {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 3%;
+  margin-right: 24px;
+}
+footer .right-footer .btn-scroll-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  opacity: 0.7;
+  border-radius: 50%;
+  border: 1.5px solid #37ff9f;
+}

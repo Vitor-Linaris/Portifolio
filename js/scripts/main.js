@@ -1,3 +1,4 @@
+// Script slide image cases
 const slide_image_cases = new Swiper(".slide-image-cases", {
   slidesPerView: 2.3,
   spaceBetween: 20,
@@ -13,6 +14,7 @@ const slide_image_cases = new Swiper(".slide-image-cases", {
     prevEl: ".s-cases .ctrl-slide .btn-prev",
   },
 });
+
 // Script for Slide About Cases
 const slide_about_case = new Swiper(".slide-about-case", {
   spaceBetween: 40,
@@ -31,4 +33,21 @@ const slide_about_case = new Swiper(".slide-about-case", {
   thumbs: {
     swiper: slide_image_cases,
   },
+});
+
+// Add class active to menu button
+const menuButton = document.getElementById("js-menu-button");
+if (menuButton) {
+  menuButton.addEventListener("click", () => {
+    menuButton.classList.toggle("is-active"); // add the CSS configuration on this button
+    document.documentElement.classList.toggle("menu-opened");
+  });
+}
+// Close menu button when clicks to the links
+const menuMobileNav = document.querySelectorAll(".js-menu-mobile li a");
+menuMobileNav.forEach((item) => {
+  item.addEventListener("click", function () {
+    document.documentElement.classList.remove("menu-opened");
+    menuButton.classList.remove("is-active");
+  });
 });

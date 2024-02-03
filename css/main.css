@@ -220,6 +220,68 @@ header .menu ul li a {
   } */
   color: #ffffff;
 }
+header .menu .hamburger {
+  display: none;
+  padding: 0px;
+  margin-left: 24px;
+}
+header .menu .hamburger.is-active .hamburger-inner,
+header .menu .hamburger.is-active .hamburger-inner::before,
+header .menu .hamburger.is-active .hamburger-inner::after {
+  background-color: #37ff9f;
+}
+header .menu .hamburger .hamburger-inner,
+header .menu .hamburger .hamburger-inner::before,
+header .menu .hamburger .hamburger-inner::after {
+  background-color: #37ff9f;
+}
+header .menu-mobile {
+  position: absolute;
+  top: 9.6rem;
+  height: calc(100vh - 96px);
+  width: 100%;
+  background: linear-gradient(115.6deg, rgba(0, 17, 10, 0.7176470588) -7.5%, rgba(0, 23, 14, 0.795) 105.49%);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0;
+  padding: 4rem 1.5rem;
+}
+header .menu-mobile ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 3rem;
+}
+header .menu-mobile ul li a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #ffffff;
+}
+@media (max-width: 1050px) {
+  header .menu ul {
+    display: none;
+  }
+  header .menu .hamburger {
+    display: block;
+  }
+}
+
+.menu-opened header .menu-mobile {
+  opacity: 1;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+}
 
 .s-hero .container {
   position: relative;
@@ -363,6 +425,7 @@ header .menu ul li a {
 }
 
 .s-marquee {
+  display: none;
   width: 100%;
   background-color: #37ff9f;
   padding: 2.65rem 0;
@@ -406,6 +469,7 @@ header .menu ul li a {
 }
 
 .s-skills {
+  display: none;
   width: 100%;
   padding: 112px 0;
   background-color: #ffffff;
@@ -472,6 +536,7 @@ header .menu ul li a {
 }
 
 .s-about-me {
+  display: none;
   padding-bottom: 112px;
 }
 .s-about-me .container {
@@ -586,6 +651,7 @@ header .menu ul li a {
 }
 
 .s-cases {
+  display: none;
   scroll-margin-top: 130px;
   margin-bottom: 11.2rem;
   position: relative !important;
@@ -1170,6 +1236,7 @@ header .menu ul li a {
 }
 
 .s-call-to-action {
+  display: none;
   padding-top: 112px;
   padding-bottom: 112px;
 }
@@ -1226,6 +1293,7 @@ header .menu ul li a {
 }
 
 footer {
+  display: none;
   border-top: 2px solid #37ff9f;
   padding-top: 50px;
   padding-bottom: 50px;

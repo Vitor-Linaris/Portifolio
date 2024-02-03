@@ -122,6 +122,7 @@
 }
 
 .s-marquee {
+  display: none;
   width: 100%;
   background-color: $color-primary-default;
   padding: 2.65rem 0;
@@ -153,6 +154,7 @@
 }
 
 .s-skills {
+  display: none;
   width: 100%;
   padding: 112px 0;
   background-color: $white;
@@ -213,6 +215,7 @@
 }
 
 .s-about-me {
+  display: none;
   padding-bottom: 112px;
   .container {
     position: relative;
@@ -310,6 +313,7 @@
 }
 
 .s-cases {
+  display: none;
   scroll-margin-top: 130px;
   margin-bottom: 11.2rem;
   position: relative !important;
@@ -861,6 +865,7 @@
 }
 
 .s-call-to-action {
+  display: none;
   padding-top: 112px;
   padding-bottom: 112px;
   .container {

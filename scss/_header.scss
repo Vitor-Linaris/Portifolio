@@ -51,8 +51,8 @@ header {
   }
   .menu-mobile {
     position: absolute;
-    top: 9.6rem;
-    height: calc(100vh - 96px);
+    top: 8.6rem;
+    height: calc(100vh - 86px);
     width: 100%;
     background: linear-gradient(
       115.6deg,
@@ -100,11 +100,9 @@ header {
   }
   @media (max-width: 576px) {
     height: 8.6rem;
-    .logo {
+    .container {
       a {
-        img {
-          width: 80%;
-        }
+        max-width: 134px;
       }
     }
   }

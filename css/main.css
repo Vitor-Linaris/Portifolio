@@ -109,7 +109,6 @@ body {
   position: relative;
   min-height: 100vh;
   background-color: #0a0c0b;
-  overflow: hidden;
 }
 
 svg {
@@ -183,7 +182,7 @@ header {
   -ms-flex-align: center;
   align-items: center;
   z-index: 2050;
-  border-bottom: 1px solid #37ff9f;
+  border-bottom: 0.5px solid #37ff9f;
 }
 header .container {
   display: -webkit-box;

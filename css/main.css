@@ -109,6 +109,7 @@ body {
   position: relative;
   min-height: 100vh;
   background-color: #0a0c0b;
+  overflow: hidden;
 }
 
 svg {

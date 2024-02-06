@@ -79,7 +79,7 @@ header {
       }
     }
   }
-  @media (max-width: 1050px) {
+  @media (max-width: 991px) {
     .menu {
       ul {
         display: none;
@@ -89,7 +89,17 @@ header {
       }
     }
   }
+  @media (max-width: 768px) {
+    .logo {
+      a {
+        img {
+          width: 88%;
+        }
+      }
+    }
+  }
 }
+
 .menu-opened {
   header {
     .menu-mobile {

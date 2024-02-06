@@ -240,25 +240,21 @@
   }
   @media (max-width: 576px) {
     .image {
-      .figma {
-        width: 50px;
-        top: 88px;
-        left: 85px;
+      display: none;
+    }
+    .content {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+      img {
+        width: 156px;
       }
-      .wordpress {
-        width: 92px;
-        right: 81px;
-        top: 52px;
-      }
-      .reactjs {
-        width: 106px;
-        top: 316px;
-        left: 65px;
-      }
-      .nextjs {
-        width: 90px;
-        right: 84px;
-        top: 309px;
+      .text {
+        h1 {
+          font-size: 64px;
+        }
+        span {
+          font-size: 18px;
+        }
       }
     }
   }

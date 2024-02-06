@@ -98,6 +98,16 @@ header {
       }
     }
   }
+  @media (max-width: 576px) {
+    height: 8.6rem;
+    .logo {
+      a {
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
 }
 
 .menu-opened {

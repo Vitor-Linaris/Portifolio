@@ -937,7 +937,6 @@ header .menu-mobile ul li a {
 }
 
 .s-cases {
-  display: none;
   scroll-margin-top: 130px;
   margin-bottom: 11.2rem;
   position: relative !important;
@@ -1423,7 +1422,7 @@ header .menu-mobile ul li a {
 }
 @media (max-width: 1260px) {
   .s-cases {
-    margin-bottom: 6rem;
+    margin-bottom: 0;
   }
   .s-cases .container .slide-cases-mobile {
     display: block;
@@ -1494,7 +1493,7 @@ header .menu-mobile ul li a {
 }
 @media (max-width: 480px) {
   .s-cases {
-    height: 43rem;
+    height: 45rem;
   }
 }
 @media (max-width: 375px) {
@@ -1522,7 +1521,6 @@ header .menu-mobile ul li a {
 }
 
 .s-call-to-action {
-  display: none;
   padding-top: 112px;
   padding-bottom: 112px;
 }
@@ -1548,8 +1546,7 @@ header .menu-mobile ul li a {
   line-height: 100%; /* 40px */
 }
 .s-call-to-action .call-to-action-title a {
-  width: 100%;
-  max-width: 208px;
+  max-width: 190px;
   margin-top: 80px;
 }
 .s-call-to-action .social-media ul li a {
@@ -1576,6 +1573,63 @@ header .menu-mobile ul li a {
 }
 .s-call-to-action .social-media ul li:not(:last-child) {
   margin-bottom: 10px;
+}
+@media (max-width: 991px) {
+  .s-call-to-action .call-to-action-title {
+    max-width: 56rem;
+  }
+  .s-call-to-action .call-to-action-title h2 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 768px) {
+  .s-call-to-action .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .s-call-to-action .call-to-action-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .s-call-to-action .call-to-action-title h2 {
+    font-size: 34px;
+  }
+  .s-call-to-action .social-media ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 16px;
+    margin-top: 2.4rem;
+  }
+}
+@media (max-width: 576px) {
+  .s-call-to-action {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  .s-call-to-action .social-media ul li a:hover p {
+    display: none;
+  }
 }
 
 footer {

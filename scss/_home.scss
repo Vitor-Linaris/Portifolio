@@ -410,8 +410,8 @@
 
 .s-about-me {
   padding-bottom: 112px;
+  overflow: hidden;
   .container {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -492,15 +492,67 @@
     }
   }
   .about-me-image {
+    position: relative;
+    .img-about-me {
+      width: 100%;
+    }
     .element-1 {
       position: absolute;
-      top: 60px;
-      right: 204px;
+      top: -50px;
+      left: -108px;
     }
     .element-2 {
       position: absolute;
-      bottom: 46px;
-      right: -66px;
+      bottom: -66px;
+      right: -52px;
+    }
+  }
+  @media (max-width: 1090px) {
+    .container {
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+    .about-me-text {
+      margin-right: 0;
+      .text-content {
+        margin-top: 4rem;
+        text-align: center;
+      }
+    }
+    .about-me-image {
+      .img-about-me {
+        max-width: 45rem;
+      }
+      .element-1 {
+        top: -40px;
+        left: -88px;
+        max-width: 315px;
+      }
+      .element-2 {
+        max-width: 18rem;
+        bottom: -35px;
+        right: -35px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .about-me-text {
+      .about-me-experience-list {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 4rem;
+        li {
+          width: 100%;
+          max-width: 243px;
+        }
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    padding-bottom: 8rem;
+    .container {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
     }
   }
 }

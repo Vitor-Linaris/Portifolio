@@ -764,9 +764,9 @@ header .menu-mobile ul li a {
 
 .s-about-me {
   padding-bottom: 112px;
+  overflow: hidden;
 }
 .s-about-me .container {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -865,15 +865,75 @@ header .menu-mobile ul li a {
   line-height: 150%;
   letter-spacing: 0.54px;
 }
+.s-about-me .about-me-image {
+  position: relative;
+}
+.s-about-me .about-me-image .img-about-me {
+  width: 100%;
+}
 .s-about-me .about-me-image .element-1 {
   position: absolute;
-  top: 60px;
-  right: 204px;
+  top: -50px;
+  left: -108px;
 }
 .s-about-me .about-me-image .element-2 {
   position: absolute;
-  bottom: 46px;
-  right: -66px;
+  bottom: -66px;
+  right: -52px;
+}
+@media (max-width: 1090px) {
+  .s-about-me .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .s-about-me .about-me-text {
+    margin-right: 0;
+  }
+  .s-about-me .about-me-text .text-content {
+    margin-top: 4rem;
+    text-align: center;
+  }
+  .s-about-me .about-me-image .img-about-me {
+    max-width: 45rem;
+  }
+  .s-about-me .about-me-image .element-1 {
+    top: -40px;
+    left: -88px;
+    max-width: 315px;
+  }
+  .s-about-me .about-me-image .element-2 {
+    max-width: 18rem;
+    bottom: -35px;
+    right: -35px;
+  }
+}
+@media (max-width: 768px) {
+  .s-about-me .about-me-text .about-me-experience-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 4rem;
+  }
+  .s-about-me .about-me-text .about-me-experience-list li {
+    width: 100%;
+    max-width: 243px;
+  }
+}
+@media (max-width: 576px) {
+  .s-about-me {
+    padding-bottom: 8rem;
+  }
+  .s-about-me .container {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
 }
 
 .s-cases {

@@ -1633,7 +1633,6 @@ header .menu-mobile ul li a {
 }
 
 footer {
-  display: none;
   border-top: 2px solid #37ff9f;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -1660,10 +1659,9 @@ footer .right-footer {
 }
 footer .right-footer p {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 120%;
-  letter-spacing: 3%;
   margin-right: 24px;
 }
 footer .right-footer .btn-scroll-top {
@@ -1676,10 +1674,41 @@ footer .right-footer .btn-scroll-top {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   background-color: transparent;
   opacity: 0.7;
   border-radius: 50%;
   border: 1.5px solid #37ff9f;
+}
+@media (max-width: 768px) {
+  footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 1.6rem;
+  }
+}
+@media (max-width: 576px) {
+  footer .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  footer .logo {
+    width: 100%;
+    max-width: 13.4rem;
+  }
+  footer .right-footer p {
+    display: none;
+  }
 }

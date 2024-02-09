@@ -298,6 +298,7 @@
   @media (max-width: 576px) {
     padding: 2rem 0;
     .content-marquee {
+      animation: marquee 20s linear infinite;
       .item-marquee {
         padding: 12px 24px;
         img {
@@ -481,12 +482,16 @@
         gap: 8px;
         padding: 16px 18px;
         background-color: #59efa7;
+        transition: all 0.4s ease;
         p {
           color: #0a0c0b;
           font-size: 14px;
           font-weight: 600;
           line-height: 150%;
           letter-spacing: 0.54px;
+        }
+        &:hover {
+          background-color: rgba(89, 239, 166, 0.801);
         }
       }
     }
@@ -785,7 +790,7 @@
                     color: #030e15;
                   }
                   &:hover {
-                    background-color: rgba(55, 255, 158, 0.5);
+                    background-color: rgba(55, 255, 158, 0.74);
                   }
                 }
               }
@@ -1137,17 +1142,28 @@
           display: flex;
           align-items: center;
           justify-content: flex-end;
+          overflow: hidden;
           p {
-            display: none;
+            position: relative;
+            right: -100%;
+            opacity: 0;
             color: $white;
             font-size: 18px;
             font-weight: 600;
             line-height: 150%;
             margin-right: 12px;
+            transition: all 0.4s ease;
+          }
+          img {
+            transition: all 0.6s ease;
           }
           &:hover {
             p {
-              display: block;
+              right: 0;
+              opacity: 1;
+            }
+            img {
+              transform: rotate(360deg);
             }
           }
         }

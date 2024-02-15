@@ -25,9 +25,14 @@ footer {
       width: 40px;
       height: 40px;
       background-color: transparent;
+      cursor: pointer;
       opacity: 0.7;
       border-radius: 50%;
       border: 1.5px solid #37ff9f;
+      transition: all 0.4s ease;
+      &:hover {
+        background-color: #37ff9f;
+      }
     }
   }
   @media (max-width: 768px) {

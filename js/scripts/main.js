@@ -23,31 +23,6 @@ const slide_mobile_case = new Swiper(".slide-cases-mobile", {
   },
 });
 
-// Script for Mobile Navigation
-const slide_mobile_case = new Swiper(".slide-cases-mobile", {
-  slidesPerView: 1,
-  speed: 600,
-  pagination: {
-    el: ".s-cases .container .slide-cases-mobile .swiper-pagination",
-    type: "progressbar",
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-    },
-  },
-  // ...
-  on: {
-    init: function () {
-      console.log("swiper initialized");
-    },
-  },
-});
-
 // Script slide image cases
 const slide_image_cases = new Swiper(".slide-image-cases", {
   slidesPerView: 2.3,
@@ -101,3 +76,30 @@ menuMobileNav.forEach((item) => {
     menuButton.classList.remove("is-active");
   });
 });
+
+const btnScrollTop = document.getElementById("js-scroll-top");
+const imgBtnScrollTop = document.getElementById("js-img-footer");
+if (btnScrollTop) {
+  btnScrollTop.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    }),
+      imgBtnScrollTop.setAttribute(
+        "src",
+        "./assets/icons/icon-arrow-up-footer.svg"
+      );
+  }),
+    btnScrollTop.addEventListener("mouseover", () => {
+      imgBtnScrollTop.setAttribute(
+        "src",
+        "./assets/icons/icon-arrow-up-footer-black.svg"
+      );
+    }),
+    btnScrollTop.addEventListener("mouseleave", () => {
+      imgBtnScrollTop.setAttribute(
+        "src",
+        "./assets/icons/icon-arrow-up-footer.svg"
+      );
+    });
+}

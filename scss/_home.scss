@@ -1202,6 +1202,18 @@
         display: flex;
         gap: 16px;
         margin-top: 2.4rem;
+        li {
+          a {
+            p {
+              display: none;
+            }
+            &:hover {
+              p {
+                display: none;
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -1212,6 +1224,9 @@
       ul {
         li {
           a {
+            p {
+              display: none;
+            }
             &:hover {
               p {
                 display: none;

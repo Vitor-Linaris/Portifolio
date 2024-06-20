@@ -7,21 +7,25 @@
       position: absolute;
       top: 162px;
       left: 75px;
+      animation: fade-1 6s infinite;
     }
     .wordpress {
       position: absolute;
       top: 25px;
       right: 85px;
+      animation: fade-1 8s infinite;
     }
     .reactjs {
       position: absolute;
       top: 470px;
       left: 45px;
+      animation: fade-1 12s infinite;
     }
     .nextjs {
       position: absolute;
       top: 410px;
       right: 150px;
+      animation: fade-1 10s infinite;
     }
   }
   .social-media {
@@ -777,11 +781,10 @@
                   justify-content: center;
                   gap: 8px;
                   background-color: $color-primary-default;
-                  width: 120px;
-                  height: 40px;
+                  padding: 10px 18px;
                   img {
-                    width: 14px;
-                    height: 24px;
+                    width: 18px;
+                    height: 18px;
                   }
                   span {
                     font-weight: 500;
